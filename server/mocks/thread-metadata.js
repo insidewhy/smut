@@ -4,6 +4,13 @@ module.exports = function(app) {
   threadMetadataRouter.get('/', function(req, res) {
     res.send({"threadMetadata":[
       {
+        id: 3,
+        subject: 'Like the cheese',
+        emailCount: 4,
+        arrived: '2014-11-16T02:08:36',
+        from: 'Cher Pastey'
+      },
+      {
         id: 1,
         subject: 'Hello',
         emailCount: 1,
@@ -16,7 +23,7 @@ module.exports = function(app) {
         emailCount: 10,
         arrived: '2014-11-15T02:08:36',
         from: 'Cookie Monster'
-      }
+      },
     ]});
   });
   app.use('/threadMetadata', threadMetadataRouter);

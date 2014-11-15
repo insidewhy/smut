@@ -39,10 +39,10 @@ export default Ember.Route.extend({
 
   actions: {
     nextThread: function() {
-      console.log("TODO: nextThread");
+      this.controller.select(1);
     },
     previousThread: function() {
-      console.log("TODO: previousThread");
+      this.controller.select(-1);
     },
   }
 
