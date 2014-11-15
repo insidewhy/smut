@@ -25,5 +25,25 @@ export default Ember.Route.extend({
       datum.set('active', true);
       return true;
     });
+  },
+
+  shortcuts: {
+    // colemak
+    n: 'nextThread',
+    e: 'previousThread',
+
+    // qwerty
+    j: 'nextThread',
+    k: 'previousThread',
+  },
+
+  actions: {
+    nextThread: function() {
+      console.log("TODO: nextThread");
+    },
+    previousThread: function() {
+      console.log("TODO: previousThread");
+    },
   }
+
 });
