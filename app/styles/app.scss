@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
   }
   th {
     padding: 3px 7px;
-    &.arrived, &.from, &.emailCount {
+    &.timestamp, &.authors, &.emailCount {
       width: 1%;
       white-space: nowrap;
     }

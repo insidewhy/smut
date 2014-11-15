@@ -2,9 +2,9 @@
   <tbody>
   {{#each controller}}
     <tr {{bind-attr class="active"}}>
-      <th class=arrived>{{arrived}}</th>
-      <th class=emailCount>({{emailCount}})</th>
-      <th class=from>{{from}}</th>
+      <th class=timestamp>{{timestamp}}</th>
+      <th class=emailCount>({{total}})</th>
+      <th class=authors>{{authors}}</th>
       <th class=subject>{{subject}}</th>
     </tr>
   {{/each}}

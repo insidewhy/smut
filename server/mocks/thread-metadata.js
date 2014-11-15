@@ -6,23 +6,26 @@ module.exports = function(app) {
       {
         id: 3,
         subject: 'Like the cheese',
-        emailCount: 4,
-        arrived: '2014-11-16T02:08:36',
-        from: 'Cher Pastey'
+        total: 4,
+        timestamp: '1416091850',
+        authors: 'Lovely Cactus',
+        tags: [ 'inbox', 'unread' ]
       },
       {
         id: 1,
         subject: 'Hello',
-        emailCount: 1,
-        arrived: '2014-11-15T02:18:14',
-        from: 'Lovely Cactus'
+        total: 1,
+        timestamp: '1416091050',
+        authors: 'Cher Pastely',
+        tags: [ 'inbox', 'spam' ]
       },
       {
         id: 2,
         subject: 'Bumface',
-        emailCount: 10,
-        arrived: '2014-11-15T02:08:36',
-        from: 'Cookie Monster'
+        total: 10,
+        timestamp: '1416081850',
+        authors: 'Cookie Monster',
+        tags: [ 'inbox', 'unread' ]
       },
     ]});
   });
