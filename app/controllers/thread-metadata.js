@@ -3,7 +3,6 @@ import Ember from "ember";
 export default Ember.ArrayController.extend({
   itemController: 'thread-metadatum',
 
-  // variables
   selected: 0,
 
   select: function(offset) {

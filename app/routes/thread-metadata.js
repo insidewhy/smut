@@ -32,9 +32,11 @@ export default Ember.Route.extend({
     n: 'nextThread',
     e: 'previousThread',
 
-    // qwerty
+    // standard
     j: 'nextThread',
+    down: 'nextThread',
     k: 'previousThread',
+    up: 'previousThread',
   },
 
   actions: {
