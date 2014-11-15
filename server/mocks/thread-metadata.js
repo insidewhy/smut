@@ -6,12 +6,16 @@ module.exports = function(app) {
       {
         id: 1,
         subject: 'Hello',
+        emailCount: 1,
         arrived: '2014-11-15T02:18:14',
+        from: 'Lovely Cactus'
       },
       {
         id: 2,
         subject: 'Bumface',
+        emailCount: 10,
         arrived: '2014-11-15T02:08:36',
+        from: 'Cookie Monster'
       }
     ]});
   });
