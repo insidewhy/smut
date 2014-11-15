@@ -4,7 +4,7 @@ module.exports = function(app) {
   threadMetadataRouter.get('/', function(req, res) {
     res.send({"threadMetadata":[
       {
-        id: 3,
+        thread: '3',
         subject: 'Like the cheese',
         total: 4,
         timestamp: '1416091850',
@@ -12,7 +12,7 @@ module.exports = function(app) {
         tags: [ 'inbox', 'unread' ]
       },
       {
-        id: 1,
+        thread: '1',
         subject: 'Hello',
         total: 1,
         timestamp: '1416091050',
@@ -20,7 +20,7 @@ module.exports = function(app) {
         tags: [ 'inbox', 'spam' ]
       },
       {
-        id: 2,
+        thread: '2',
         subject: 'Bumface',
         total: 10,
         timestamp: '1416081850',
