@@ -1,0 +1,10 @@
+<table class="mails">
+  <tbody>
+  {{#each controller}}
+    <tr {{bind-attr class="active"}}>
+      <th>{{arrived}}</th>
+      <th>{{subject}}</th>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>
