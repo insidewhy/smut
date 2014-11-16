@@ -29,5 +29,5 @@ module.exports = function(app) {
       },
     ]});
   });
-  app.use('/threadMetadata', threadMetadataRouter);
+  app.use('/api/threadMetadata', threadMetadataRouter);
 };
