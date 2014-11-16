@@ -35,6 +35,8 @@
   },
   "dependencies": {
     "ember-cli-compass-compiler": "0.0.17",
-    "express-http-proxy": "^0.3.0"
+    "express-http-proxy": "^0.3.0",
+    "gaze": "^0.6.4",
+    "lodash": "^2.4.1"
   }
 }

@@ -27,7 +27,27 @@ module.exports = function(app) {
     return;
   }
   else {
-    // TODO: start sub-process, watch directory etc.
+    var spawn = require('child_process').spawn;
+    var apiServer = null;
+    var respawn = function() {
+      if (apiServer)
+        apiServer.kill();
+
+      console.log('spawn api server');
+      apiServer = spawn('node', ['server/notmuch/index.js']);
+      apiServer.stdout.pipe(process.stdout);
+    };
+    respawn();
+
+    var gaze = require('gaze');
+    var _ = require('lodash');
+    gaze('server/notmuch/*.js', function (err) {
+      if (err)
+        console.log("failed to watch");
+      else
+        this.on('all', _.debounce(respawn, 600));
+    });
+
     var proxy = require('express-http-proxy');
     app.use('/api', proxy('localhost:4201'));
   }
