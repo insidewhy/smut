@@ -13,17 +13,12 @@ module.exports = function(pipelines) {
   var sources = glob.within('app')
 
   pipelines['compile:js'] = [
-    sources('**/*.js'),
-    traceur.toAmd({ getModulePath: getModulePath }),
+    all(
+      [ sources('**/*.js'), traceur.toAmd({ getModulePath: getModulePath }) ],
+      [ sources('**/*.hbs'), ember_tmplts({ getModulePath: getModulePath }) ]
+    ),
     glob('bootstrap.js'),
     concat('smut'),
-    write('dist/assets')
-  ]
-
-  pipelines['compile:hbs'] = [
-    sources('**/*.hbs'),
-    ember_tmplts({ getModulePath: getModulePath }),
-    concat('templates'),
     write('dist/assets')
   ]
 }
