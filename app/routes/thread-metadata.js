@@ -1,7 +1,7 @@
 import Ember from "ember";
 
 export default Ember.Route.extend({
-  model: function(params) {
+  model(params) {
     // todo:
     //   params.after: pagination
     //   params.account: for multiple e-mail accounts
@@ -19,7 +19,7 @@ export default Ember.Route.extend({
     return this.store.find('thread-metadatum');
   },
 
-  setupController: function(controller, model) {
+  setupController(controller, model) {
     controller.set('model', model);
     controller.some(function(datum) {
       datum.set('active', true);
@@ -40,10 +40,10 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    nextThread: function() {
+    nextThread() {
       this.controller.select(1);
     },
-    previousThread: function() {
+    previousThread() {
       this.controller.select(-1);
     },
   }

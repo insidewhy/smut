@@ -1,7 +1,7 @@
 import Ember from "ember";
 
 export default Ember.ObjectController.extend({
-  model: function() {
+  model() {
     return { title: 'Loading' };
   }
 });

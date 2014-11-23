@@ -5,7 +5,7 @@ export default Ember.ArrayController.extend({
 
   selected: 0,
 
-  select: function(offset) {
+  select(offset) {
     var length = this.get('length');
     var newSel = this.selected + offset;
     if (newSel < 0)
