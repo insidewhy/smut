@@ -31,7 +31,14 @@
     "ember-data": "1.0.0-beta.10",
     "ember-export-application-global": "^1.0.0",
     "express": "^4.8.5",
-    "glob": "^4.0.5"
+    "glob": "^4.0.5",
+    "plumber": "^0.4.8",
+    "plumber-all": "^0.4.3",
+    "plumber-bower": "^0.4.3",
+    "plumber-concat": "^0.4.0",
+    "plumber-glob": "^0.4.2",
+    "plumber-traceur": "git://github.com/chilon-net/plumber-traceur",
+    "plumber-write": "^0.4.1"
   },
   "dependencies": {
     "ember-cli-compass-compiler": "0.0.17",
