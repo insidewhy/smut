@@ -15,9 +15,9 @@ module.exports = function(pipelines) {
   pipelines['compile:js'] = [
     all(
       [ sources('**/*.js'), traceur.toAmd({ getModulePath: getModulePath }) ],
-      [ sources('**/*.hbs'), ember_tmplts({ getModulePath: getModulePath }) ]
+      [ sources('**/*.hbs'), ember_tmplts({ getModulePath: getModulePath }) ],
+      glob('bootstrap.js')
     ),
-    glob('bootstrap.js'),
     concat('smut'),
     write('dist/assets')
   ]
