@@ -11,7 +11,7 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "https://github.com/stefanpenner/ember-cli",
+  "repository": "https://github.com/nuisanceofcats/smut",
   "engines": {
     "node": ">= 0.10.0"
   },
@@ -38,7 +38,7 @@
     "plumber-concat": "^0.4.0",
     "plumber-ember-template-compiler": "0.0.1",
     "plumber-glob": "^0.4.2",
-    "plumber-traceur": "git://github.com/chilon-net/plumber-traceur",
+    "plumber-traceur": "git://github.com/chilon-net/plumber-traceur#12740b4",
     "plumber-write": "^0.4.1"
   },
   "dependencies": {
