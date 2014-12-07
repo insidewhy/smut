@@ -32,14 +32,8 @@
     "ember-export-application-global": "^1.0.0",
     "express": "^4.8.5",
     "glob": "^4.0.5",
-    "plumber":  "git://github.com/chilon-net/plumber#e3335416",
-    "plumber-all": "git://github.com/chilon-net/plumber-all#82e1ac7",
-    "plumber-bower": "^0.4.3",
-    "plumber-concat": "^0.4.0",
-    "plumber-ember-template-compiler": "0.0.1",
-    "plumber-glob": "^0.4.2",
-    "plumber-traceur": "git://github.com/chilon-net/plumber-traceur#12740b4",
-    "plumber-write": "^0.4.1"
+    "sigh": "^0.2.4",
+    "sigh-ember-templates": "^0.0.2"
   },
   "dependencies": {
     "ember-cli-compass-compiler": "0.0.17",
